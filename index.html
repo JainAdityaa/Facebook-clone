@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="images/facebook.png" class="logo"><span>acebook</span>
+            <ul>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+                <li><img src="images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png">
+            </div>
+        </div>
+
+        <!-- --------- profile Dropdown -------- -->
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>Aditya Jain</p>  
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>  
+                        <a href="#">Help Us To Improve the new Design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="">Logout <img src="images/arrow.png" width="10px"></a>
+                </div>
+            
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- --------- Left Sidebar COde -------- -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png">Latest News</a>
+                <a href="#"><img src="images/friends.png">Friends</a>
+                <a href="#"><img src="images/group.png">Group</a>
+                <a href="#"><img src="images/marketplace.png">Marketplace</a>
+                <a href="#"><img src="images/watch.png">Watch</a>
+                <a href="#">See more</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcut</p>
+                <a href=""><img src="images/shortcut-1.png">Web Developers</a>
+                <a href=""><img src="images/shortcut-2.png">Website Design</a>
+                <a href=""><img src="images/shortcut-3.png">Full Stack Developers</a>
+                <a href=""><img src="images/shortcut-4.png">Website Experts</a>
+            </div>
+        </div>
+
+        <!-- --------- Main Content COde -------- -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Biplab Sarkar</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Mayank Singh</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Harsh Verma</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>Paras Kumar</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>Aditya Jain</p>
+                        <small>Public</small> <i class="fa fa-sort-desc" style="font-size:20px"></i>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, Aditya ?"></textarea>
+                    <div class="add-post-links">
+                        <a href=""><img src="images/live-video.png">Live Video</a>
+                        <a href=""><img src="images/photo.png">Photo/Video</a>
+                        <a href=""><img src="images/feeling.png">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Aditya Jain</p>
+                            <span>June 24 2023, 13:40 PM </span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+                <p class="post-text">Follow my instagram page - <span>mr_aj_web_developer</span> to watch some video how to  write css and html. <a href="#">#Web development</a> <a href="#">#Website Design</a></p>
+                <img src="images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like-blue.png">120</div>
+                        <div><img src="images/comments.png">45</div>
+                        <div><img src="images/share.png">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fa fa-sort-desc" style="font-size:14px"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Harsh Verma</p>
+                            <span>May 30 2023, 12:40 PM </span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+                <p class="post-text">Subscribe my youtube channel <span>Harsh Verma</span> to watch and learn Flutter development course. <a href="#">#Flutter developer</a> <a href="#">#App Development</a></p>
+                <img src="images/feed-image-2.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like.png">220</div>
+                        <div><img src="images/comments.png">65</div>
+                        <div><img src="images/share.png">30</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fa fa-sort-desc" style="font-size:14px"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Paras Kumar</p>
+                            <span>August 20 2023, 09:12 AM </span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+                <p class="post-text">Subscribe my youtube channel <span>Paras Kumar</span> to watch my singing videos and Enjoy it. <a href="#">#Singer</a> <a href="#">#Learn Singing</a></p>
+                <img src="images/feed-image-3.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like-blue.png">100</div>
+                        <div><img src="images/comments.png">55</div>
+                        <div><img src="images/share.png">22</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fa fa-sort-desc" style="font-size:14px"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Mayank Singh</p>
+                            <span>Jan 05 2023, 07:00 PM </span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+                <p class="post-text">Subscribe my youtube channel <span>Mayank Singh</span> to watch my English videos and Enjoy it. <a href="#">#English Lover</a> <a href="#">#Learn English</a></p>
+                <img src="images/feed-image-4.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like.png">300</div>
+                        <div><img src="images/comments.png">75</div>
+                        <div><img src="images/share.png">40</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fa fa-sort-desc" style="font-size:14px"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Biplab Sarkar</p>
+                            <span>Dec 03 2023, 10:00 AM </span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa fa-ellipsis-v" style="font-size:24px"></i></a>
+                </div>
+                <p class="post-text">Subscribe my youtube channel <span>Biplab Sarkar</span> to watch my latest videos and Enjoy it. <a href="#">#Coders</a> <a href="#">#Developers</a></p>
+                <img src="images/feed-image-5.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like-blue.png">400</div>
+                        <div><img src="images/comments.png">100</div>
+                        <div><img src="images/share.png">55</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fa fa-sort-desc" style="font-size:14px"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load-more-btn">Load More</button>
+        </div>
+
+        <!-- --------- Right Sidebar COde -------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa fa-map-marker" style="font-size:14px"></i> Willson Tech Park</p>
+                    <a href="">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa fa-map-marker" style="font-size:14px"></i> Willson Tech Park</p>
+                    <a href="">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisements</h4>
+                <a href="">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="advertisement-image">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="">Hide Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Harsh Verma</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p>paras Kumar</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                <p>Sanjana karma</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2023 -<span> mr_aj_web_developer </span>Instagram Page</p>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
